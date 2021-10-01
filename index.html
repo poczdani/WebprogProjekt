@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  
+    <script>
+        function belep_btn() {
+            window.location.href = "cegbelep.php";
+
+
+        }
+
+     
+
+    </script>
+   
+   
+    <div>
+     
+
+        <div class="fokeret" id="fo">
+
+            <form action="regisztracio.php" method="post">
+
+                <div class="elsokeret" id="elsoegy">
+
+                    <label style="color:whitesmoke" id="cegnev" >Cégeknek</label><br><br>
+                    <label style="color: white;">Cég: </label>
+                    <input type="text" id="ceg_nev" name="cegnev"><br>
+                    <label style="color: white;">Email: </label>
+                    <input type="text" id="email" name="email"><br>
+                    <label style="color: white;" >Jelszo: </label>
+                    <input type="password" id="jelszo" name="jelszo"><br>
+                    <label style="color: white;">Jelszo megerősítése: </label>
+                    <input type="password" id="jelszo" name="jelszo_megeresoit"><br>
+                    
+                    <label  style="color: white;">Pozíciók száma: </label>
+                    <input type="text" id="po" name="pozicio"><br>
+                    <label  style="color: white;">Szakok:</label>
+                    <select class="form-select" multiple aria-label="multiple select example" name="kar">                  
+                     <option value="MIK">Műszaki informatikai kar(MIK)</option>   
+                     <option value="GTK">Gazdasági tudományi kar(GTK)</option> 
+                     <option value="MFTK">Modern Filológiai és Társadalomtudományi Kar(MFTK)</option> 
+                     <option value="MK">Mérnöki Kar(MK)</option> 
+                     <option value="GK">Georgikon Kar(GK)</option>    
+
+
+                    </select>
+                </br>
+
+                    <label  style="color: white;">Időtartam:</label>
+                    <select class="form-select" size="3" aria-label="size 3 select example" name="ido">                  
+                     <option value="6">6 hét</option>   
+                     <option value="8">8 hét</option> 
+                     <option value="12">12 hét</option> 
+                       
+
+
+                    </select>
+
+                   
+                </div>
+
+
+        </div>
+
+       
+        </br>
+
+          <button type="submit" class="btn btn-secondary">Regisztráció</button>
+          
+        </form>
+
+
+        <button name="belepes" class="btn btn-secondary" onclick="belep_btn()">Belépés</button>
+</body>
+
+
+
+</html>
